@@ -325,12 +325,10 @@ footer{
 
 <div class="speech">
 <strong>HERBAK</strong>
-<p>
-Welcome, young analyst! 🔬<br>
-Aku Herbak, pemandu petualanganmu.
-Hari ini kita akan menjelajahi dunia
-<strong>Descriptive Text</strong>.
-Siap masuk ke Laboratory Zone?
+<p id="introGreeting">
+Selamat datang di pembelajaran daring, <strong id="introName">Explorer</strong>.<br>
+Jangan lupa untuk selalu menjaga kesehatan di situasi darurat
+kebakaran hutan dan lahan (karhutla) ini, ya...
 </p>
 </div>
 </div>
@@ -750,6 +748,8 @@ document.getElementById("questScreen").classList.add("active");
 
 document.getElementById("welcomeTitle").textContent=
 "Welcome, "+player+"!";
+
+document.getElementById("introName").textContent=player;
 
 showQuest();
 
